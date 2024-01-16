@@ -263,13 +263,13 @@ body {
   border-radius: 50%;
 }
 .line {
-  width: 15.72vw;
+  width: 33%;
   height: 0.35vh;
   background-color: #36a59e;
   margin-top: 2.55%;
 }
 .new_line {
-  width: 3.93vw;
+  width: 8.5%;
   height: 0.35vh;
   background-color: #36a59e;
   margin-top: 2.55%;

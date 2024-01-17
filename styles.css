@@ -176,8 +176,8 @@ body {
   width: 0.66vw;
   height: 13vh;
   background-color: #9e9995;
-  margin-left: 30px;
-  margin-top: 15px;
+  margin-left: 2vw;
+  margin-top: 2vh;
   border-radius: 100px;
 }
 .edu-cont {
@@ -190,7 +190,48 @@ body {
 /* .edu-dates {
   width: 1px;
 } */
+.elem {
+  position: absolute;
+  display: flex;
+  transform-origin: 0% 50%;
+  transform: rotate(90deg);
+  translate: 50%;
+  /* translate: -600px 0px; */
+  /* width: 40px; */
+  top: 5%;
+  width: 47.18vw;
+}
 
+.subelem {
+  position: relative;
+  display: flex;
+  transform-origin: 0% 50%;
+
+  /* translate: -600px 0px; */
+  /* width: 40px; */
+  width: 47.18vw;
+}
+
+.badaCircle {
+  /* // display: relative; */
+  width: 2rem;
+  height: 2rem;
+  background-color: #fcf8ed;
+  border: 0.2rem solid #36a59e;
+  border-radius: 50%;
+}
+.line {
+  width: 12.5rem;
+  height: 0.15rem;
+  background-color: #36a59e;
+  margin-top: 2.55%;
+}
+.new_line {
+  width: 3rem;
+  height: 0.15rem;
+  background-color: #36a59e;
+  margin-top: 2.55%;
+}
 /* .edu-info {
   height: 620px;
   width: 600px;
@@ -242,50 +283,6 @@ body {
 .tring3 {
   bottom: 15%;
 }
-
-.elem {
-  position: absolute;
-  display: flex;
-  transform-origin: 0% 50%;
-  transform: rotate(90deg);
-  translate: 50%;
-  /* translate: -600px 0px; */
-  /* width: 40px; */
-  top: 5%;
-  width: 47.18vw;
-}
-
-.subelem {
-  position: relative;
-  display: flex;
-  transform-origin: 0% 50%;
-
-  /* translate: -600px 0px; */
-  /* width: 40px; */
-  width: 47.18vw;
-}
-
-.badaCircle {
-  /* // display: relative; */
-  width: 2rem;
-  height: 2rem;
-  background-color: #fcf8ed;
-  border: 0.2rem solid #36a59e;
-  border-radius: 50%;
-}
-.line {
-  width: 12.5rem;
-  height: 0.15rem;
-  background-color: #36a59e;
-  margin-top: 2.55%;
-}
-.new_line {
-  width: 3rem;
-  height: 0.15rem;
-  background-color: #36a59e;
-  margin-top: 2.55%;
-}
-
 .edu-info {
   width: 70.62vw;
   height: 124.11vh;
@@ -327,7 +324,11 @@ body {
   margin-top: 3%;
 }
 /* skill-section */
-
+.khali-jagah {
+  width: 100%;
+  height: 5rem;
+  background-color: #fcf8ed;
+}
 .skill-sec {
   width: 100%;
   height: 100vh;
@@ -342,23 +343,23 @@ body {
   display: flex;
   gap: 10px;
 }
-.skill-info p {
+
+.skill-head {
+  font-size: 4.5rem;
   font-family: "Titillium Web", sans-serif;
-  margin-top: 1.2%;
-  font-size: 4rem;
 }
 .vert {
-  width: 0.5%;
-  height: 75%;
-  background-color: rgb(158, 153, 149);
-  margin-left: 1.5%;
-  margin-top: 1%;
-  border-radius: 1000px;
+  width: 0.66vw;
+  height: 13vh;
+  background-color: #9e9995;
+  margin-left: 2vw;
+  margin-top: 2vh;
+  border-radius: 100px;
 }
 .skill-set {
   width: 100%;
   height: 82%;
-  background-color: cornflowerblue;
+  /* background-color: cornflowerblue; */
   display: flex;
 }
 .skill-left {
@@ -434,7 +435,7 @@ body {
   background-color: rgb(54, 165, 158);
 }
 .skill-desc {
-  margin-top: 15%;
+  margin-top: 5%;
   margin-left: 15%;
 }
 
@@ -451,6 +452,7 @@ body {
   width: 70%;
   margin-top: 5%;
   margin-left: 15%;
+  margin-bottom: 10%;
 }
 .certi {
   width: 30%;
@@ -468,11 +470,18 @@ body {
 /* project section */
 
 /* GENERAL ELEMENTS */
+.khali-jagah2 {
+  width: 100%;
+  height: 3rem;
+  background-color: #fcf8ed;
+}
+
+.box {
+  padding: 3rem 3rem;
+  background-color: #fcf8ed;
+}
 
 .section {
-  padding: 15rem 3rem;
-  border-top: 1px solid #ddd;
-
   transition: transform 1s, opacity 1s;
 }
 
@@ -653,6 +662,12 @@ body {
 }
 .img2 {
   right: 10%;
+}
+
+.khali-jagah3 {
+  width: 100%;
+  height: 3rem;
+  background-color: #fcf8ed;
 }
 
 /* content-section */

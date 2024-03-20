@@ -190,6 +190,42 @@ body {
 /* .edu-dates {
   width: 1px;
 } */
+
+/* new edit */
+
+.nyacontainer {
+  display: flex;
+  flex-direction: column; /* Stack circles vertically */
+  align-items: center; /* Center circles horizontally */
+  margin: 0 auto;
+  position: absolute;
+  left: 22%;
+  top: 7%;
+  background-color: #fcf8ed;
+}
+
+.nyacircle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #36a59e;
+  /* margin-bottom: 20px; Spacing between circles */
+}
+
+.nyaline {
+  width: 2%;
+  height: 16rem; /* Adjust height for desired line length */
+  background-color: #36a59e;
+  /* margin-bottom: 20px; Match spacing between circles */
+}
+
+.circle:last-child {
+  /* Remove spacing for the last circle */
+  margin-bottom: 0;
+}
+
+/* new edit */
+
 .elem {
   position: absolute;
   display: flex;

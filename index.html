@@ -387,14 +387,13 @@
             <img src="mailll.svg" alt="madhumitha" style="height: 65%; width: 65%; margin-bottom: 10%;">
           </div>
           <div class="mail-options">
-            <input class="enter" placeholder="Leave Your thoughts"></input>
-            <input class="enter" placeholder="Leave Your thoughts"></input>
-            <input class="enter" placeholder="Leave Your thoughts"></input>
-            <textarea
-              class="enter spec-enter"
-              placeholder="Leave Your thoughts"
-            ></textarea>
-            <button class="enter-btn">Send Message</button>
+            <form class="mail-options" action="/send-email" method="POST">
+              <input type="text" name="name" placeholder="Name" required><br>
+              <input type="email" name="email" placeholder="Email" required><br>
+              <input type="text" name="profession" placeholder="Profession" required><br>
+              <textarea name="message" placeholder="Leave Your Thoughts" required></textarea><br>
+              <button type="submit">Send Message</button>
+            </form>  
           </div>
         </div>
       </div>

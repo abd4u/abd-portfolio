@@ -14,9 +14,11 @@
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="newCss.css" />
   </head>
   <body>
     <header class="header">
@@ -45,10 +47,20 @@
           <li class="nav-item"><a href="" class="nav-link">Projects</a></li>
         </ul>
       </nav>
-      <div class="hero">
-        <p class="intro hi">Hi 👋🏿</p>
-        <p class="intro">I'm Mirza</p>
-      </div>
+      <main class="hero-section">
+          <div class="hero-section-left">
+            <div class="hero-section-heading">Hi,I am Mirza <p class="hand">👋🏿</p></div>
+          <div class="hero-section-heading hero-section-subheading">
+            I am a <span class="role"></span>
+          </div>
+          <div class="hero-section-description">A programmer,a puzzle Solver and a 
+            coding Enthusiast from Bangalore, India.
+           I Code, design and devolop to solve real 
+            - life problem. </div>
+          </div>
+          <div class="hero-sectio-right"><img src="myImg.png" alt="pic" class="mypic" />
+          </div>
+      </main>
       <div class="about-me">
         <div class="upper-div">
           <div class="vertical"></div>
@@ -69,24 +81,6 @@
               <ul class="opt">
                 <li>
                   <div class="lst">
-                    <div>
-                      <!-- <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                        class="w-6 h-6 icon"
-                      >
-                        <path
-                          d="M11.7 2.805a.75.75 0 0 1 .6 0A60.65 60.65 0 0 1 22.83 8.72a.75.75 0 0 1-.231 1.337 49.948 49.948 0 0 0-9.902 3.912l-.003.002c-.114.06-.227.119-.34.18a.75.75 0 0 1-.707 0A50.88 50.88 0 0 0 7.5 12.173v-.224c0-.131.067-.248.172-.311a54.615 54.615 0 0 1 4.653-2.52.75.75 0 0 0-.65-1.352 56.123 56.123 0 0 0-4.78 2.589 1.858 1.858 0 0 0-.859 1.228 49.803 49.803 0 0 0-4.634-1.527.75.75 0 0 1-.231-1.337A60.653 60.653 0 0 1 11.7 2.805Z"
-                        />
-                        <path
-                          d="M13.06 15.473a48.45 48.45 0 0 1 7.666-3.282c.134 1.414.22 2.843.255 4.284a.75.75 0 0 1-.46.711 47.87 47.87 0 0 0-8.105 4.342.75.75 0 0 1-.832 0 47.87 47.87 0 0 0-8.104-4.342.75.75 0 0 1-.461-.71c.035-1.442.121-2.87.255-4.286.921.304 1.83.634 2.726.99v1.27a1.5 1.5 0 0 0-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.66a6.727 6.727 0 0 0 .551-1.607 1.5 1.5 0 0 0 .14-2.67v-.645a48.549 48.549 0 0 1 3.44 1.667 2.25 2.25 0 0 0 2.12 0Z"
-                        />
-                        <path
-                          d="M4.462 19.462c.42-.419.753-.89 1-1.395.453.214.902.435 1.347.662a6.742 6.742 0 0 1-1.286 1.794.75.75 0 0 1-1.06-1.06Z"
-                        />
-                      </svg> -->
-                    </div>
                     <div class="abt">
                       <h4 style="color:whitesmoke;">Birthplace</h4>
                       <span style="color:#bbfbfb">Kushinagar</span>
@@ -97,25 +91,7 @@
                   <div class="lst">
                     <div>
                       <div class="lst">
-                        <div>
-                          <!-- <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            fill="#bbfbfb"
-                            class="w-6 h-6 icon"
-                          >
-                            <path
-                              fill-rule="evenodd"
-                              d="M5.478 5.559A1.5 1.5 0 0 1 6.912 4.5H9A.75.75 0 0 0 9 3H6.912a3 3 0 0 0-2.868 2.118l-2.411 7.838a3 3 0 0 0-.133.882V18a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3v-4.162c0-.299-.045-.596-.133-.882l-2.412-7.838A3 3 0 0 0 17.088 3H15a.75.75 0 0 0 0 1.5h2.088a1.5 1.5 0 0 1 1.434 1.059l2.213 7.191H17.89a3 3 0 0 0-2.684 1.658l-.256.513a1.5 1.5 0 0 1-1.342.829h-3.218a1.5 1.5 0 0 1-1.342-.83l-.256-.512a3 3 0 0 0-2.684-1.658H3.265l2.213-7.191Z"
-                              clip-rule="evenodd"
-                            />
-                            <path
-                              fill-rule="evenodd"
-                              d="M12 2.25a.75.75 0 0 1 .75.75v6.44l1.72-1.72a.75.75 0 1 1 1.06 1.06l-3 3a.75.75 0 0 1-1.06 0l-3-3a.75.75 0 0 1 1.06-1.06l1.72 1.72V3a.75.75 0 0 1 .75-.75Z"
-                              clip-rule="evenodd"
-                            />
-                          </svg> -->
-                        </div>
+                        
                         <div class="abt">
                           <h4 style="color:whitesmoke;">Education</h4>
                       <span style="color:#bbfbfb">Bachelors of Eng.</span>
@@ -126,13 +102,6 @@
                 </li>
                 <li>
                     <div class="lst">
-                        <div>
-                            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 icon">
-                                <path d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
-                                <path d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
-                              </svg> -->
-                              
-                        </div>
                         <div class="abt">
                           <h4 style="color:whitesmoke;">E-mail</h4>
                           <span style="color:#bbfbfb">themirza001</span>
@@ -143,11 +112,6 @@
                     <div class="lst">
                       <div>
                         <div class="lst">
-                          <div>
-                            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 icon">
-                                <path fill-rule="evenodd" d="M14.447 3.026a.75.75 0 0 1 .527.921l-4.5 16.5a.75.75 0 0 1-1.448-.394l4.5-16.5a.75.75 0 0 1 .921-.527ZM16.72 6.22a.75.75 0 0 1 1.06 0l5.25 5.25a.75.75 0 0 1 0 1.06l-5.25 5.25a.75.75 0 1 1-1.06-1.06L21.44 12l-4.72-4.72a.75.75 0 0 1 0-1.06Zm-9.44 0a.75.75 0 0 1 0 1.06L2.56 12l4.72 4.72a.75.75 0 0 1-1.06 1.06L.97 12.53a.75.75 0 0 1 0-1.06l5.25-5.25a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" />
-                              </svg> -->
-                          </div>
                           <div class="abt">
                             <h4 style="color:whitesmoke;">Hobbies</h4>
                             <span style="color:#bbfbfb">Coding & Reading</span>
@@ -159,8 +123,8 @@
               </ul>
             </div>
             <button class="btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 btn-icon">
-                <path fill-rule="evenodd" d="M19.5 21a3 3 0 0 0 3-3V9a3 3 0 0 0-3-3h-5.379a.75.75 0 0 1-.53-.22L11.47 3.66A2.25 2.25 0 0 0 9.879 3H4.5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h15Zm-6.75-10.5a.75.75 0 0 0-1.5 0v4.19l-1.72-1.72a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l3-3a.75.75 0 1 0-1.06-1.06l-1.72 1.72V10.5Z" clip-rule="evenodd" />
-              </svg>
+              <path fill-rule="evenodd" d="M19.5 21a3 3 0 0 0 3-3V9a3 3 0 0 0-3-3h-5.379a.75.75 0 0 1-.53-.22L11.47 3.66A2.25 2.25 0 0 0 9.879 3H4.5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h15Zm-6.75-10.5a.75.75 0 0 0-1.5 0v4.19l-1.72-1.72a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l3-3a.75.75 0 1 0-1.06-1.06l-1.72 1.72V10.5Z" clip-rule="evenodd" />
+            </svg>
               <span class="download-text">Download Resume</span>
             </button>
           </div>
@@ -430,7 +394,26 @@
       </div>
     </footer>
     <script src="style.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+  <script>
+    var typeData = new Typed(".role", {
+      strings: [
+        "Full Stack Developer",
+        "Web Developer",
+        "Programmer",
+        "Backend Developer",
+        "Coder",
+      ],
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 80,
+      backDelay: 1000,
+    });
+    setTimeout(function () {
+        document.querySelector('.hand').style.animation = 'none';
+      }, 5000);
+  </script>
     <!-- added comment -->
   </body>
 </html>

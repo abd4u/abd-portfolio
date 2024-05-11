@@ -68,16 +68,22 @@ body {
 /* about me */
 .about-me {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   background-color: #36a59e;
 }
 
 .upper-div {
+  display: flex;
+  align-items: center;
+
+  padding: 2vh 0;
+}
+.upper-div {
   width: 100%;
-  height: 20vh;
+  /* height: 20vh; */
   padding-top: 1vh;
   display: flex;
-  gap: 15px;
+  gap: 1%;
 }
 
 .vertical {
@@ -103,9 +109,9 @@ body {
 }
 .my-icon {
   background-color: #8fd6d6;
-  padding: 0.5rem;
-  height: 65vh;
-  width: 20vw;
+  padding: 0.5%;
+  height: 60%;
+  width: 20%;
 }
 .content {
   width: 75vw;
@@ -144,17 +150,53 @@ body {
   height: 2rem;
 }
 .btn {
-  height: 5rem;
-  width: 20vw;
+  height: 4rem;
+  width: 100%;
+  max-width: 300px; /* Limit button width */
   background-color: #ffe89c;
-  margin-left: 3rem;
   margin-top: 2rem;
+  margin-bottom: 2rem;
   border: none;
   box-shadow: 0 0 20px #36a59e;
 }
 .download-text {
   font-size: 1.5rem;
   margin-top: 1rem;
+}
+@media only screen and (max-width: 768px) {
+  .upper-div {
+    padding: 1vh 0;
+  }
+
+  .vertical {
+    margin-top: 0;
+  }
+
+  .info {
+    font-size: 3rem;
+  }
+
+  .lower-div {
+    padding: 1vh 0;
+  }
+
+  .my-icon {
+    width: 40vw;
+    max-width: none;
+  }
+
+  .content {
+    max-width: 80%;
+  }
+
+  .info1,
+  .info2 {
+    font-size: 1.5rem;
+  }
+
+  .opt li {
+    flex: 1 1 100%;
+  }
 }
 /* eduction-section */
 

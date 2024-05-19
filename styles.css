@@ -68,21 +68,21 @@ body {
 /* about me */
 .about-me {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh; /* Ensure it covers the full viewport height */
   background-color: #36a59e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2vh 0;
+  box-sizing: border-box;
 }
 
 .upper-div {
   display: flex;
   align-items: center;
-
   padding: 2vh 0;
-}
-.upper-div {
   width: 100%;
-  /* height: 20vh; */
-  padding-top: 1vh;
-  display: flex;
   gap: 1%;
 }
 
@@ -99,103 +99,204 @@ body {
   font-size: 4.5rem;
   margin-top: 0.8vh;
   color: whitesmoke;
-  font-family: "Titillium Web", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
+
 .lower-div {
   display: flex;
   gap: 0.9vw;
   width: 100%;
   padding-left: 2vw;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
+
 .my-icon {
   background-color: #8fd6d6;
   padding: 0.5%;
-  height: 60%;
+  height: auto;
   width: 20%;
 }
+
 .content {
   width: 75vw;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
 .info1 {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 2vw, 2rem);
   color: #bbfbfb;
 }
 
 .info2 {
   padding-top: 3rem;
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 2vw, 2rem);
 }
 
 .opt {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
+
 .opt li {
   list-style: none;
 }
+
 .icon {
   display: inline;
   height: 10px;
   width: 40px;
 }
+
 .lst {
   display: flex;
   gap: 5px;
 }
+
 .abt {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 2vw, 2rem);
 }
+
 .btn-icon {
   width: 2rem;
   height: 2rem;
 }
+
 .btn {
   height: 4rem;
   width: 100%;
-  max-width: 300px; /* Limit button width */
+  max-width: 300px;
   background-color: #ffe89c;
   margin-top: 2rem;
   margin-bottom: 2rem;
   border: none;
   box-shadow: 0 0 20px #36a59e;
 }
+
 .download-text {
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
   margin-top: 1rem;
 }
-@media only screen and (max-width: 768px) {
-  .upper-div {
-    padding: 1vh 0;
-  }
 
-  .vertical {
-    margin-top: 0;
-  }
-
+@media only screen and (max-width: 1024px) {
   .info {
-    font-size: 3rem;
-  }
-
-  .lower-div {
-    padding: 1vh 0;
-  }
-
-  .my-icon {
-    width: 40vw;
-    max-width: none;
-  }
-
-  .content {
-    max-width: 80%;
+    font-size: clamp(2rem, 3.5vw, 3.5rem);
   }
 
   .info1,
   .info2 {
-    font-size: 1.5rem;
+    font-size: clamp(1.25rem, 1.75vw, 1.75rem);
+  }
+
+  .abt {
+    font-size: clamp(1.25rem, 1.75vw, 1.75rem);
+  }
+
+  .download-text {
+    font-size: clamp(0.875rem, 1.25vw, 1.25rem);
+  }
+
+  .my-icon {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .upper-div {
+    padding: 1vh 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .vertical {
+    margin-top: 0;
+    width: 1vw;
+    height: 5vh;
+  }
+
+  .info {
+    font-size: clamp(2rem, 3vw, 3rem);
+  }
+
+  .lower-div {
+    padding: 1vh 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .my-icon {
+    width: 40vw;
+    max-width: 150px;
+  }
+
+  .content {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .info1,
+  .info2 {
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+  }
+
+  .abt {
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+  }
+
+  .opt {
+    flex-direction: column;
+    align-items: center;
   }
 
   .opt li {
     flex: 1 1 100%;
+  }
+
+  .btn {
+    width: 80%;
+  }
+
+  .download-text {
+    font-size: clamp(0.875rem, 1.25vw, 1.25rem);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .info {
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+  }
+
+  .info1 {
+    font-size: clamp(0.875rem, 1.25vw, 1.25rem);
+  }
+
+  .info2 {
+    font-size: clamp(0.875rem, 1.25vw, 1.25rem);
+  }
+
+  .abt {
+    font-size: clamp(0.875rem, 1.25vw, 1.25rem);
+  }
+
+  .download-text {
+    font-size: clamp(0.75rem, 1vw, 1rem);
+  }
+
+  .my-icon {
+    width: 50vw;
+    max-width: 120px;
+  }
+
+  .content {
+    max-width: 95%;
+  }
+
+  .btn {
+    width: 90%;
   }
 }
 /* eduction-section */

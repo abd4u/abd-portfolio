@@ -68,7 +68,7 @@ body {
 /* about me */
 .about-me {
   width: 100%;
-  min-height: 100vh; /* Ensure it covers the full viewport height */
+  /* Removed min-height */
   background-color: #36a59e;
   display: flex;
   flex-direction: column;

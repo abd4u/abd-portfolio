@@ -57,7 +57,7 @@ body {
 .intro {
   font-size: 17vh;
   margin-left: 60%;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 .hi {
   margin-left: 70%;
@@ -246,6 +246,7 @@ body {
     width: 50%;
   }
 }
+
 /* eduction-section */
 
 .edu {
@@ -274,7 +275,7 @@ body {
   font-family: "Titillium Web", sans-serif; */
   font-size: 4.5rem;
   margin-top: 0.8vh;
-  font-family: "Titillium Web", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 /* .edu-dates {
   width: 1px;
@@ -471,7 +472,7 @@ body {
 
 .skill-head {
   font-size: 4.5rem;
-  font-family: "Titillium Web", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 .vert {
   width: 0.66vw;

@@ -81,3 +81,21 @@ const slider = function () {
   });
 };
 slider();
+
+const img = document.getElementById('tilt-img');
+
+img.addEventListener('mouseenter', () => {
+  img.addEventListener('mousemove', tiltImage);
+});
+
+img.addEventListener('mouseleave', () => {
+  img.removeEventListener('mousemove', tiltImage);
+  img.style.transform = 'rotateY(0deg) rotateX(0deg)';
+});
+
+function tiltImage(e) {
+  const sensitivity = 15; // Adjust sensitivity here
+  const xAxis = (img.offsetWidth / 2 - e.offsetX) / sensitivity;
+  const yAxis = (img.offsetHeight / 2 - e.offsetY) / sensitivity;
+  img.style.transform = rotateY(${xAxis}deg) rotateX(${yAxis}deg);
+}

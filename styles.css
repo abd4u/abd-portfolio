@@ -266,6 +266,7 @@ body {
   height: 17%;
   display: flex;
   flex-direction: row;
+  background-color: #fcf8ed;
 }
 .vert-line {
   width: 0.66vw;
@@ -484,16 +485,14 @@ body {
   background-color: #fcf8ed;
 }
 .skill-info {
-  width: 100%;
-  height: 18%;
-  font-weight: 400;
-  font-size: 48px;
+  height: 17%;
   display: flex;
-  gap: 10px;
+  flex-direction: row;
 }
 
 .skill-head {
   font-size: 4.5rem;
+  margin-left: 1%;
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
 }

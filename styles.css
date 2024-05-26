@@ -121,11 +121,18 @@ body {
   justify-content: space-between;
 }
 
-.pic-container {
-  height: 90%;
-  width: 80%;
-  background-color: black;
-  border: 5px solid #8fd6d6;
+.container {
+  perspective: 1000px;
+  position: relative;
+}
+
+.tilt-img {
+  transition: transform 0.3s ease;
+  animation: moveUpDown 3s ease-in-out infinite alternate;
+}
+
+.tilted {
+  transform: rotateX(15deg) rotateY(-15deg);
 }
 
 .img-field {

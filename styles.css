@@ -67,7 +67,7 @@ body {
 
 /* about me */
 .container {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: #36a59e;
 }
@@ -88,7 +88,7 @@ body {
 .abt-vert {
   width: 0.66vw;
   height: 13vh;
-  background-color: #66d2ca;
+  background-color: #8fd6d6;
   margin-left: 2vw;
   margin-top: 2vh;
   border-radius: 100px;
@@ -98,13 +98,14 @@ body {
   font-size: 4.5rem;
   margin-left: 1%;
   color: whitesmoke;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
 }
 
 .left {
   width: 25%;
   height: 100%;
-  background-color: blue;
+  background-color: #36a59e;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -122,8 +123,9 @@ body {
 
 .pic-container {
   height: 90%;
-  width: 90%;
+  width: 80%;
   background-color: black;
+  border: 5px solid #8fd6d6;
 }
 
 .img-field {
@@ -157,27 +159,32 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-grow: 1;
+  flex-grow: 0.5;
 }
 .part3 {
   background-color: #36a59e;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: flex-start;
   padding: 10px;
+  flex-grow: 0.5;
 }
 .abt-para {
-  font-size: 25px;
+  font-size: large;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #8fd6d6;
 }
 .abt-i {
   height: 40%;
   width: 20%;
-  background-color: #ffe89c;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
 }
 
 .btn {
@@ -190,6 +197,8 @@ body {
   cursor: pointer; /* Change cursor to pointer on hover */
   width: 20%;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
 }
 
 @media (max-width: 768px) {
@@ -275,7 +284,8 @@ body {
   font-family: "Titillium Web", sans-serif; */
   font-size: 4.5rem;
   margin-top: 0.8vh;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
 }
 /* .edu-dates {
   width: 1px;
@@ -346,6 +356,8 @@ body {
   border: 0.2rem solid #36a59e;
   border-radius: 50%;
 }
+/* #0c4541; */
+/* #13d6c9; */
 .line {
   width: 12.5rem;
   height: 0.15rem;
@@ -380,7 +392,10 @@ body {
   font-size: 140%;
   z-index: 1;
   padding: 7% 6%;
-  font-weight: 600;
+  align-content: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: larger;
 }
 .tring {
   position: absolute;
@@ -436,18 +451,30 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 2%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: small;
 }
 .edu-name {
   height: 15%;
-  width: 15%;
+  width: fit-content;
   /* background-color: green; */
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 1.5%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: larger;
+  text-decoration: underline #36a59e;
+  text-decoration-thickness: 15%;
+  text-decoration-style: wavy;
 }
 .edu-para {
   margin-top: 3%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: large;
 }
 /* skill-section */
 .khali-jagah {
@@ -463,7 +490,6 @@ body {
 .skill-info {
   width: 100%;
   height: 18%;
-  font-style: italic;
   font-weight: 400;
   font-size: 48px;
   display: flex;
@@ -472,7 +498,8 @@ body {
 
 .skill-head {
   font-size: 4.5rem;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
 }
 .vert {
   width: 0.66vw;
@@ -504,6 +531,11 @@ body {
   flex-basis: 5%;
   display: flex;
   flex-direction: column;
+}
+.myskills > p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: large;
 }
 /* .a {
   background-color: black;
@@ -566,19 +598,27 @@ body {
 }
 
 .span {
-  font-size: 20px;
+  font-size: larger;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
 }
 
 .sk {
-  font-size: 48px;
-  color: yellow;
+  font-size: xx-large;
+  color: #36a59e;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
 }
+
 .skill-para {
   height: 35%;
   width: 70%;
   margin-top: 5%;
   margin-left: 15%;
   margin-bottom: 10%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: large;
 }
 .certi {
   width: 30%;
@@ -592,6 +632,9 @@ body {
   align-items: center;
   margin-top: 5%;
   margin-left: 15%;
+  font-size: larger;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
 }
 /* project section */
 
@@ -603,7 +646,7 @@ body {
 }
 
 .box {
-  padding: 3rem 3rem;
+  padding: 0.5rem 3rem;
   background-color: #fcf8ed;
 }
 
@@ -612,8 +655,8 @@ body {
 }
 
 .slider {
-  max-width: 60rem;
-  height: 35rem;
+  max-width: 50rem;
+  height: 30rem;
   margin: 0 auto;
   position: relative;
 
@@ -660,17 +703,21 @@ body {
 .slider__btn--left {
   left: 4.5%;
   transform: translate(-50%, -50%);
+  background: linear-gradient(70deg, #0c4541, #13d6c9);
 }
 
 .slider__btn--right {
   right: 4.5%;
   transform: translate(50%, -50%);
+  background: linear-gradient(300deg, #0c4541, #13d6c9);
 }
 
 .proj-head {
-  font-size: 5vh;
   position: absolute;
   top: 3%;
+  font-size: x-large;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
 }
 
 .proj-info {
@@ -678,6 +725,9 @@ body {
   top: 18%;
   height: 70%;
   width: 75%;
+  font-size: large;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   /* background-color: #ffe89c; */
 }
 
@@ -690,8 +740,6 @@ body {
 
 .proj-img {
   display: inline-block;
-
-  margin-top: 10%;
   height: 60%;
   width: 50%;
 }
@@ -704,7 +752,6 @@ body {
 
 .proj-details {
   display: inline-block;
-  margin-top: 10%;
   /* background-color: #36a59e; */
   height: 60%;
   width: 45%;
@@ -813,12 +860,14 @@ body {
 .msg {
   height: 60%;
   width: 100%;
-  font-size: 48px;
+  font-size: 4.5rem;
   /* background-color: aquamarine; */
   /* display: flex;
   justify-content: center;
   align-items: center; */
-  margin-top: 1%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  margin-bottom: 1%;
 }
 .details {
   height: 40%;
@@ -856,11 +905,15 @@ body {
   font-weight: 500;
   color: #666;
   border-radius: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
 }
 .contact-right textarea {
   height: 100px;
   padding-top: 15px;
   border-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
 }
 
 .contact-inputs:focus {
@@ -878,6 +931,8 @@ body {
   border-radius: 50px;
   background: linear-gradient(270deg, #666, black);
   cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
 }
 
 .mail-options {
@@ -918,21 +973,14 @@ body {
   top: 10px;
   left: 15px;
 }
-.enter-btn {
-  height: 10%;
-  width: 30%;
-  background-color: beige;
-  border: none;
-  border-radius: 10px;
-  background-color: rgb(54, 165, 158);
-  border-radius: 40px;
-}
+
 .ver {
-  width: 0.8%;
-  height: 80%;
-  background-color: #3f3f3f;
-  margin-left: 1%;
-  border-radius: 40px;
+  width: 0.66vw;
+  height: 13vh;
+  background-color: #9e9995;
+  margin-left: 2vw;
+  margin-top: 2vh;
+  border-radius: 100px;
 }
 
 /* foot-bar */
@@ -955,6 +1003,8 @@ body {
 .soc-name {
   text-decoration: none;
   color: black;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
 }
 .soc-name:hover {
   font-size: 1.1rem;
